@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OrtegaU Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+
+
+<body>
+  <div class="container-fluid">
+
+    <!-- Page Title -->
+    <section id="MainTitle">
+      <div class="row mt-2 d-flex justify-content-center">
+        <div class="col-12 text-center test1">
+          <h1>5 DAYS FORECAST!</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Date and Time -->
+    <section id="DNT">
+      <!-- Current date goes here -->
+      <div class="row dntTF">
+        <div class="col-12 text-center ">
+          <p id="dategoeshere" class="outline">TUESDAY, JAN 24</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZIP and Favorites -->
+    <section id="ZNf">
+      <div class="row">
+        <div class="col text-center">
+          <input id="cityInput" type="text" class="inputValue borderinput text-center" placeholder="Input Zip or City">
+          <button id="Btn1" type="button" class="btn btn-secondary borderbtn">ENTER ZIP</button>
+        </div>
+
+        <div class="col">
+          
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </section>
+
+    <!-- Week Days -->
+    <section id="FDAYS">
+      <div class="row mt-3">
+        <div class="col">
+          <div class="grid-container text-center">
+            <div class="grid-item grid-item-1">
+              <h1 class="outline">MONDAY</h1>
+
+              <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top bordercard rounded" src="http://openweathermap.org/img/wn/01d@2x.png" alt="Card image cap" height="50%">
+                  <div class="card-body bordercard rounded">
+                    <h5 class="card-title ">Current Temp</h5>
+                    <p id="tempmonday" class="card-text">temp</p>
+                    <p id="maxmonday" class="card-text">max</p>
+                    <p id="minmonday" class="card-text">min</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="grid-item grid-item-2">
+              <h1 class="outline">TUESDAY</h1>
+              <div class="d-flex justify-content-center">
+                
+                <div class="d-flex justify-content-center">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top bordercard rounded" src="http://openweathermap.org/img/wn/02d@2x.png" alt="Card image cap " height="50%">
+                    <div class="card-body bordercard rounded">
+                      <h5 class="card-title">Current Temp</h5>
+                      <p id="temptuesday" class="card-text">temp</p>
+                      <p id="maxtuesday" class="card-text">max</p>
+                      <p id="mintuesday" class="card-text">min</p>
+                    </div>
+                  </div>                
+                </div>
+
+
+
+
+
+
+              </div>
+            </div>
+            <div class="grid-item grid-item-3">
+              <h1 class="outline">WEDNESDAY</h1>
+              <div class="d-flex justify-content-center">
+                
+                <div class="d-flex justify-content-center">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top bordercard rounded" src="http://openweathermap.org/img/wn/02d@2x.png" alt="Card image cap" height="50%" >
+                    <div class="card-body bordercard rounded">
+                      <h5 class="card-title">Current Temp</h5>
+                      <p id="tempwednesday" class="card-text">temp</p>
+                      <p id="maxwednesday" class="card-text">max</p>
+                      <p id="minwednesday" class="card-text">min</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+            <div class="grid-item grid-item-4">
+              <h1 class="outline">THURSDAY</h1>
+              
+
+              <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top bordercard rounded" src="http://openweathermap.org/img/wn/01d@2x.png" alt="Card image cap" height="50%">
+                  <div class="card-body bordercard rounded">
+                    <h5 class="card-title">Current Temp</h5>
+                    <p id="tempthursday" class="card-text">temp</p>
+                    <p id="maxthursday" class="card-text">max</p>
+                    <p id="minthursday" class="card-text">min</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+            <div class="grid-item grid-item-5">
+              <h1 class="outline">FRIDAY</h1>
+              
+              <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-topbordercard bordercard rounded" src="http://openweathermap.org/img/wn/02d@2x.png" alt="Card image cap" height="50%">
+                  <div class="card-body bordercard rounded">
+                    <h5 class="card-title">Current Temp</h5>
+                    <p id="tempfriday" class="card-text">temp</p>
+                    <p id="maxfriday" class="card-text">max</p>
+                    <p id="minfriday" class="card-text">min</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- City Name -->
+    <div class="row mt-5">
+      <div class="col text-center d-flex justify-content-center">
+        <h1 id="currentcity" class="test1">CITY NAME GOES HERE</h1>
+      </div>
+    </div>
+
+    <!-- DAY EVE NIGHT -->
+    <div class="row mt-3 d-flex justify-content-evenly">
+      <div class="col-6 test text-center"></div>
+    
+      <div class="col-6 test text-center"></div>
+    </div>
+
+    <!-- Last div -->
+  </div>
+  <script src="./Scripts/app.js" type="module"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+/* Remove HTML defaults */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* index Background Color */
+body{
+    background-color: #95D2FF
+}
+
+.mainTitleFormat{
+    
+    color: #4744CF;
+    background-color: #F1F5DE;
+}
+
+.dntTF{    
+    color: white;
+    font-size: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto)  
+  }
+
+.test{
+    background-color: white;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 300px;
+    color: blue
+}
+
+.test1{
+    background-color: white;
+    border-radius: 30px;    
+    width: 25%;
+    color: blue;
+    box-sizing: border-box;
+    border-style: double;
+    border-color: #4744CF;
+    border-width: 10px;
+
+}
+
+.temp{
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.max{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.min{
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bordercard{
+    box-sizing: border-box;
+    border-style: double;
+    border-color: #4744CF;
+    border-width: 10px;    
+}
+
+.borderinput{
+    border-radius: 15px;
+    height: 115%;
+}
+
+.borderbtn{
+    border-radius: 15px;
+    
+}
+
+.outline{
+	color: blue; 
+	font-size: 40px;    
+}
